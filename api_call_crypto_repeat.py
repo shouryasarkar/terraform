@@ -63,7 +63,7 @@ interval_seconds = 5
 num_iterations = duration_seconds // interval_seconds
 
 # Make API calls at regular intervals
-for _ in range(num_iterations):
+for i in range(num_iterations):
     data = load_data_from_api(api_url)
 
     # Save the cryptocurrency prices to a CSV file with a timestamp
